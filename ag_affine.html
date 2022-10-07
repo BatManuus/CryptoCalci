@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoCalci</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="./common.css">
+  <script src="affine.js"></script>
+
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="2.png" ,align="Center" />
+            
+        <div id="pricing-table" class="clear">
+            <div class="plan">
+                <h3 style="color:black">Encryption<span>E</span></h3>         
+                <ul>
+                    <li>Enter Plaintext</li>
+                    <li><textarea cols="20" rows="8" name="plaintext" onKeyUp="encodedtext.value=encode(plaintext.value,a.value,b.value);"></textarea></li><br>
+                    <li><p style="text-align:center;">
+                        Please select the Additive key:
+                        <select name="b">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                        </select>
+                    </p></li>
+                    <li>
+                    <p style="text-align:center;" >
+                        Please select the Multiplicative Key:
+                        <select name="a">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="5">5</option>
+                          <option value="7">7</option>
+                          <option value="9">9</option>
+                          <option value="11">11</option>
+                          <option value="15">15</option>
+                          <option value="17">17</option>
+                          <option value="19">19</option>
+                          <option value="21">21</option>
+                          <option value="23">23</option>
+                          <option value="25">25</option>
+                        </select>
+                    </p></li>
+                </ul> 
+            </div>
+                <div class="plan">
+                <h3 style="color:black">Decryption<span>D</span></h3>	
+                <ul>
+                    <li>Ciphertext</li>
+                    <li><textarea cols="20" rows="16" name="encodedtext" onKeyUp="plaintext.value=decode(encodedtext.value,a.value,b.value);"></textarea></li>	
+                </ul>
+            </div> 	
+        </div>
+    </header>
+</body>
+</html>

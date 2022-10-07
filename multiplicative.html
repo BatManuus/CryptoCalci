@@ -14,20 +14,12 @@
     <h1 class="outsideScreen">MULTIPLICATIVE CIPHER</h1>
   </div>
   <script>
-
     var information = document.getElementById("myinformation");
     var instructions = document.getElementById("myinstructions");
-
     var informtion_button = document.getElementById("information");
     var instructions_button = document.getElementById("instructions");
-
-    
- 
     var span = document.getElementsByClassName("close1")[0];
     var span1 = document.getElementsByClassName("close2")[0];
-    
-
-
     informtion_button.onclick = function() {
       if(information.style.display === "block")
       {
@@ -37,7 +29,6 @@
         information.style.display = "block";
       }
     }
-    
     instructions_button.onclick = function() {
       if(instructions.style.display==="block")
       {
@@ -46,16 +37,13 @@
       else{
         instructions.style.display = "block";
       }
-   
     }
-
     span.onclick = function() {
       information.style.display = "none";
     }
     span1.onclick = function() {
       instructions.style.display = "none";
     }
- 
     window.onclick = function(event) {
       if (event.target == information) {
         information.style.display = "none";
