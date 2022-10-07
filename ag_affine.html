@@ -9,17 +9,18 @@
 
 </head>
 <body>
+    
     <header class="showcase">
         <div class="showcase-top">
             <img src="2.png" ,align="Center" />
-            
+   
         <div id="pricing-table" class="clear">
             <div class="plan">
                 <h3 style="color:black">Encryption<span>E</span></h3>         
-                <ul>
-                    <li>Enter Plaintext</li>
-                    <li><textarea cols="20" rows="8" name="plaintext" onKeyUp="encodedtext.value=encode(plaintext.value,a.value,b.value);"></textarea></li><br>
-                    <li><p style="text-align:center;">
+                <form name="rail"><table cellpadding="10">
+                    <tr>Enter Plaintext</tr><br><br>
+                    <tr><textarea cols="20" rows="8" name="plaintext" onKeyUp="encodedtext.value=encode(plaintext.value,a.value,b.value);"></textarea></tr><br>
+                    <tr><td style="text-align:center;">
                         Please select the Additive key:
                         <select name="b">
                           <option value="0">0</option>
@@ -49,9 +50,8 @@
                           <option value="24">24</option>
                           <option value="25">25</option>
                         </select>
-                    </p></li>
-                    <li>
-                    <p style="text-align:center;" >
+                    </td></tr>
+                    <tr><td style="text-align:center;" >
                         Please select the Multiplicative Key:
                         <select name="a">
                           <option value="1">1</option>
@@ -67,15 +67,17 @@
                           <option value="23">23</option>
                           <option value="25">25</option>
                         </select>
-                    </p></li>
-                </ul> 
+                    </td></tr>
+                 </table>
             </div>
                 <div class="plan">
                 <h3 style="color:black">Decryption<span>D</span></h3>	
-                <ul>
-                    <li>Ciphertext</li>
-                    <li><textarea cols="20" rows="16" name="encodedtext" onKeyUp="plaintext.value=decode(encodedtext.value,a.value,b.value);"></textarea></li>	
-                </ul>
+                <tr>
+                    <td style="text-align:center;">Encoded Message :</td><br><br><br><br>
+                    <td>
+                    <textarea cols="20" rows="13" name="encodedtext" onKeyUp="plaintext.value=decode(encodedtext.value,a.value,b.value);"></textarea>
+                    </td>
+                    </tr>
             </div> 	
         </div>
     </header>
